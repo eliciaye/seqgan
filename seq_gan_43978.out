@@ -1,0 +1,23 @@
+/home/eecs/eliciaye/seqgan
+steropes
+Wed Oct 26 15:00:26 PDT 2022
+starting job...
+You are rocking it Elicia -- Adrian and Kevin
+WARNING:tensorflow:From /home/eecs/eliciaye/anaconda3/envs/seqgan/lib/python3.7/site-packages/tensorflow_core/python/compat/v2_compat.py:65: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+WARNING:tensorflow:From /home/eecs/eliciaye/anaconda3/envs/seqgan/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/eecs/eliciaye/seqgan/generator.py:53: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+Traceback (most recent call last):
+  File "sequence_gan.py", line 186, in <module>
+    main()
+  File "sequence_gan.py", line 100, in main
+    filter_sizes=dis_filter_sizes, num_filters=dis_num_filters, l2_reg_lambda=dis_l2_reg_lambda)
+  File "/home/eecs/eliciaye/seqgan/discriminator.py", line 72, in __init__
+    with tf.variable_scope('discriminator'):
+AttributeError: module 'tensorflow' has no attribute 'variable_scope'
+All done.
